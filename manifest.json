@@ -1,10 +1,10 @@
 {
   "name": "My Extension",
   "version": "1.0",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "background": {
-    "scripts": ["background.js"]
+    "service_worker": "background.js"
   },
-  "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"]
+  "permissions": ["scripting", "webRequest", "webRequestBlocking", "<all_urls>"],
+  "host_permissions": ["<all_urls>"]
 }
-
